@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{d893b131-0744-481d-88dc-6d8dc5eb7615}</ProjectGuid>
+    <RootNamespace>LogisticsSystem</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Container\String.h" />
+    <ClInclude Include="UI\StockCheckUI.h" />
+    <ClInclude Include="UI\EditBoxUI.h" />
+    <ClInclude Include="Entity\ItemBatchInfo.h" />
+    <ClInclude Include="Entity\StringifiedItemBatchInfo.h" />
+    <ClInclude Include="UI\ItemInfoUI.h" />
+    <ClInclude Include="UI\PurchaseRecordUI.h" />
+    <ClInclude Include="UI\SalesRecordUI.h" />
+    <ClInclude Include="UI\SaleItemUI.h" />
+    <ClInclude Include="UI\ItemBatchInfoUI.h" />
+    <ClInclude Include="UI\ListTemplateUI.h" />
+    <ClInclude Include="UI\Callback.h" />
+    <ClInclude Include="UI\Message.h" />
+    <ClInclude Include="Entity\StrigifiedSalesRecord.h" />
+    <ClInclude Include="DAL\PurchaseRecordDAO.h" />
+    <ClInclude Include="DAL\SalesRecordDAO.h" />
+    <ClInclude Include="DPL\PurchaseRecordDPO.h" />
+    <ClInclude Include="DPL\SalesRecordDPO.h" />
+    <ClInclude Include="DAL\ItemBatchInfoDAO.h" />
+    <ClInclude Include="DPL\ItemBatchInfoDPO.h" />
+    <ClInclude Include="Container\ScrollIterator.h" />
+    <ClInclude Include="Service\SalesService.h" />
+    <ClInclude Include="Service\ItemBatchInfoService.h" />
+    <ClInclude Include="UI\MessageBoxUI.h" />
+    <ClInclude Include="UI\PurchaseItemUI.h" />
+    <ClInclude Include="UI\AddItemUI.h" />
+    <ClInclude Include="Algorithm\Algorithm.h" />
+    <ClInclude Include="Entity\ItemInfo.h" />
+    <ClInclude Include="Config\enumeration.h" />
+    <ClInclude Include="Config\FileName.h" />
+    <ClInclude Include="Config\limits.h" />
+    <ClInclude Include="Config\typedef.h" />
+    <ClInclude Include="Container\HashMap.h" />
+    <ClInclude Include="Container\Iterable.h" />
+    <ClInclude Include="Container\LinkedList.h" />
+    <ClInclude Include="DAL\DisplayStringMapDAO.h" />
+    <ClInclude Include="DPL\DisplayStringMapDPO.h" />
+    <ClInclude Include="Entity\PurchaseRecord.h" />
+    <ClInclude Include="DAL\ItemInfoDAO.h" />
+    <ClInclude Include="DPL\ItemInfoDPO.h" />
+    <ClInclude Include="Entity\SalesRecord.h" />
+    <ClInclude Include="Service\ItemInfoService.h" />
+    <ClInclude Include="Service\PurchaseService.h" />
+    <ClInclude Include="Entity\StringifiedPurchaseRecord.h" />
+    <ClInclude Include="Entity\StringifiedItemInfo.h" />
+    <ClInclude Include="UI\ItemManagerUI.h" />
+    <ClInclude Include="UI\MessageHandler.h" />
+    <ClInclude Include="UI\MainMenuUI.h" />
+    <ClInclude Include="UI\TextEditTemplateUI.h" />
+    <ClInclude Include="UI\UserInterface.h" />
+    <ClInclude Include="Utility\ConsoleUtil.h" />
+    <ClInclude Include="Utility\Logger.h" />
+    <ClInclude Include="Utility\FileUtil.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DAL\PurchaseRecordDAO.cpp" />
+    <ClCompile Include="DAL\SalesRecordDAO.cpp" />
+    <ClCompile Include="DPL\PurchaseRecordDPO.cpp" />
+    <ClCompile Include="DPL\SalesRecordDPO.cpp" />
+    <ClCompile Include="DAL\ItemBatchInfoDAO.cpp" />
+    <ClCompile Include="DPL\ItemBatchInfoDPO.cpp" />
+    <ClCompile Include="Service\ItemInfoService.cpp" />
+    <ClCompile Include="UI\StockCheckUI.cpp" />
+    <ClCompile Include="UI\EditBoxUI.cpp" />
+    <ClCompile Include="UI\ItemInfoUI.cpp" />
+    <ClCompile Include="UI\PurchaseRecordUI.cpp" />
+    <ClCompile Include="UI\SalesRecordUI.cpp" />
+    <ClCompile Include="UI\SaleItemUI.cpp" />
+    <ClCompile Include="Service\SalesService.cpp" />
+    <ClCompile Include="Service\ItemBatchInfoService.cpp" />
+    <ClCompile Include="UI\ItemBatchInfoUI.cpp" />
+    <ClCompile Include="UI\MessageBoxUI.cpp" />
+    <ClCompile Include="UI\PurchaseItemUI.cpp" />
+    <ClCompile Include="UI\AddItemUI.cpp" />
+    <ClCompile Include="DAL\DisplayStringMapDAO.cpp" />
+    <ClCompile Include="DPL\DisplayStringMapDPO.cpp" />
+    <ClCompile Include="DAL\ItemInfoDAO.cpp" />
+    <ClCompile Include="DPL\ItemInfoDPO.cpp" />
+    <ClCompile Include="Service\PurchaseService.cpp" />
+    <ClCompile Include="UI\ItemManagerUI.cpp" />
+    <ClCompile Include="UI\MessageHandler.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="UI\MainMenuUI.cpp" />
+    <ClCompile Include="UI\UserInterface.cpp" />
+    <ClCompile Include="Utility\ConsoleUtil.cpp" />
+    <ClCompile Include="Utility\FileUtil.cpp" />
+    <ClCompile Include="Utility\Logger.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
